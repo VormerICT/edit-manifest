@@ -3,7 +3,7 @@
   xmlns="http://www.phonegap.com/ns/plugins/1.0" 
   xmlns:android="http://schemas.android.com/apk/res/android" 
   xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads" 
-  xmlns:rim="http://www.blackberry.com/ns/widgets" id="outsystems-plugin-disable-backup" version="1.0.0">
+  xmlns:rim="http://www.blackberry.com/ns/widgets" id="outsystems-plugin-disable-backup" version="1.0.1">
   <name>outsystems-plugin-disable-backup</name>
   <description>Changes AndroidManifest.xml to disable auto backup by setting android:allowBackup to false.</description>
   <license>MIT</license>
