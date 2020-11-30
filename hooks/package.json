@@ -9,6 +9,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "q": "^1.5.1"
+        "q": "^1.5.1",
+        "elementtree" : "^0.1.7"
     }
 }
