@@ -15,8 +15,7 @@
   "author": "Jeroen Vormer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/OutSystemsExperts/outsystems-plugin-disable-backup.git/issues"
+    "url": "https://github.com/VormerICT/edit-manifest.git/issues"
   },
-  "homepage": "    "url": "git+https://github.com/VormerICT/edit-manifest.git"
-#readme"
+  "homepage": "git+https://github.com/VormerICT/edit-manifest.git#readme"
 }
