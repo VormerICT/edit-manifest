@@ -57,6 +57,8 @@ var disableAllowBackup = (function () {
                 root.set("xmlns:tools", "http://schemas.android.com/tools");
                 applicationElement.set("android:allowBackup", "false");
                 applicationElement.set("tools:replace", "android:allowBackup");
+                applicationElement.set("android:debuggable", "false");
+                applicationElement.set("tools:replace", "android:debuggable");
             } else {
                 throw new Error("Invalid AndroidManifest.xml structure. No <application> tag found.");
             }
