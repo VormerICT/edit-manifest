@@ -1,6 +1,6 @@
-# outsystems-plugin-disable-backup
+# edit-manifest
 
-Changes AndroidManifest.xml to disable auto backup by setting android:allowBackup to false.
+Changes AndroidManifest.xml to disable auto backup by setting android:allowBackup and android:debuggable to false.
 
 ## Installation
 
