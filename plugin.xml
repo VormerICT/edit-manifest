@@ -15,13 +15,9 @@
   <platform name="android">
     <!-- <hook type="after_plugin_install" src="hooks/disableAndroidBackup.js"/> -->
     <!-- <hook type="after_prepare" src="hooks/disableAndroidBackup.js"/> -->
-    <!-- <hook type="before_compile" src="hooks/disableAndroidBackup.js"/> -->
-    <!-- <hook type="before_compile" src="hooks/disableAndroidDebuggable.js"/> -->
-    
-    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-      <application android:allowBackup="false"/>
-      
-    </edit-config>
+    <hook type="before_compile" src="hooks/disableAndroidBackup.js"/>
+    <hook type="before_compile" src="hooks/disableAndroidDebuggable.js"/>
+
     
   </platform>
 </plugin>
