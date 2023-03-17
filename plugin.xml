@@ -19,7 +19,7 @@
     <!-- <hook type="before_compile" src="hooks/disableAndroidDebuggable.js"/> -->
     
     <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-      <application android:debuggable="false"/>
+      <application android:allowBackup="false"/>
       
     </edit-config>
     
