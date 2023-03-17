@@ -57,6 +57,7 @@ var disableDebuggable = (function () {
                 root.set("xmlns:tools", "http://schemas.android.com/tools");
                 applicationElement.set("android:debuggable", "false");
                 applicationElement.set("tools:replace", "android:debuggable");
+                console.log("Setting android:debuggable to fals. ");
             } else {
                 throw new Error("Invalid AndroidManifest.xml structure. No <application> tag found.");
             }
