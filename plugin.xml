@@ -20,7 +20,7 @@
     
     <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
       <application android:debuggable="false"/>
-      <application android:allowBackup="true"/>
+      
     </edit-config>
     
   </platform>
