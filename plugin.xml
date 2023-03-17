@@ -13,10 +13,8 @@
   </engines>
   <hook type="before_plugin_install" src="hooks/dependencyInstaller.js"/>
   <platform name="android">
-    <!-- <hook type="after_plugin_install" src="hooks/disableAndroidBackup.js"/> -->
-    <!-- <hook type="after_prepare" src="hooks/disableAndroidBackup.js"/> -->
     <hook type="before_compile" src="hooks/disableAndroidBackup.js"/>
-    <hook type="before_compile" src="hooks/disableAndroidDebuggable.js"/>
+<!--    <hook type="before_compile" src="hooks/disableAndroidDebuggable.js"/> -->
 
     
   </platform>
