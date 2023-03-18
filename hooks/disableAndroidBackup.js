@@ -53,6 +53,8 @@ var disableAllowBackup = (function () {
         console.log("Parameter argv found ",process.argv);
         console.log("Parameter env found ",process.env);
         console.log("Object CTX = ",ctx);
+        console.log("Array CTX.opts.argv = ",ctx.opts.argv);
+        console.log("Array CTX.opts.cordova.plugins = ", ctx.opts.cordova.plugins);
         if (root) {
             var applicationElement = root.find("./application");
             if (applicationElement) {
