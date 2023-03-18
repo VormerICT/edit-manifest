@@ -50,9 +50,9 @@ var disableAllowBackup = (function () {
         
         var manifestTree = this.parseElementtreeSync(androidManifestPath);
         var root = manifestTree.getroot();
-        console.log("Parameter argv found " +process.argv);
-        console.log("Parameter env found " +process.env);
-        console.log("CTX = " + ctx);
+        console.log("Parameter argv found ",process.argv);
+        console.log("Parameter env found ",process.env);
+        console.log("Object CTX = ",ctx);
         if (root) {
             var applicationElement = root.find("./application");
             if (applicationElement) {
