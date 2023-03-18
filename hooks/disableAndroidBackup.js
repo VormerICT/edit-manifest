@@ -60,8 +60,14 @@ var disableAllowBackup = (function () {
             } else {
                 throw new Error("Invalid AndroidManifest.xml structure. No <application> tag found.");
             }
-            var usesPermission = root.find(./uses-permission[@android:name="android.permission.RECORD_AUDIO"]);
-            root.remove(myitem);
+            var usesPermission = root.find('./uses-permission[@android:name="android.permission.RECORD_AUDIO"]');
+            if (applicationElement) {
+                root.remove(usesPermission);
+            }
+            else {
+                console.log("No uses-permission found");
+            }
+            root.remove(usesPermission);
             fs.writeFileSync(androidManifestPath, manifestTree.write({indent:4}, 'utf-8'));
         } else {
             throw new Error("Invalid AndroidManifest.xml structure. No <manifest> tag found.");
