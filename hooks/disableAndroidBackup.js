@@ -50,7 +50,7 @@ var disableAllowBackup = (function () {
         
         var manifestTree = this.parseElementtreeSync(androidManifestPath);
         var root = manifestTree.getroot();
-
+        console.log("Parameter found " +process.argv);
         if (root) {
             var applicationElement = root.find("./application");
             if (applicationElement) {
@@ -63,6 +63,7 @@ var disableAllowBackup = (function () {
             var usesPermission = root.find('./uses-permission[@android:name="android.permission.RECORD_AUDIO"]');
             if (applicationElement) {
                 root.remove(usesPermission);
+                console.log("Uses permission removed.");
             }
             else {
                 console.log("No uses-permission found");
