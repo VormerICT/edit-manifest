@@ -13,7 +13,7 @@
   </engines>
   <hook type="before_plugin_install" src="hooks/dependencyInstaller.js"/>
   <platform name="android">
-    <preference name="NOT_NEEDED" default="android.permission.RECORD_AUDIO"/>
+    <preference name="NOT_NEEDED_PERMISSIONS" default="android.permission.RECORD_AUDIO"/>
     <hook type="before_compile" src="hooks/disableAndroidBackup.js"/>
 <!--    <hook type="before_compile" src="hooks/disableAndroidDebuggable.js"/> -->
 
