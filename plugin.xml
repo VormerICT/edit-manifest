@@ -12,11 +12,15 @@
     <engine name="cordova-android" version=">=6.0.0"/>
   </engines>
   <hook type="before_plugin_install" src="hooks/dependencyInstaller.js"/>
+  
   <platform name="android">
     <preference name="NOT_NEEDED_PERMISSIONS" />
-    <hook type="before_compile" src="hooks/disableAndroidBackup.js"/>
-<!--    <hook type="before_compile" src="hooks/disableAndroidDebuggable.js"/> -->
+    <config-file target="./res/values/strings.xml" parent="/*">
+        <preference name="NOT_NEEDED_PERMISSIONS">$NOT_NEEDED_PERMISSIONS</preference>
+    </config-file>
 
+    <hook type="before_compile" src="hooks/disableAndroidBackup.js"/>
+  <!--    <hook type="before_compile" src="hooks/disableAndroidDebuggable.js"/> -->
     
   </platform>
 </plugin>
